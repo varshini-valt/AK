@@ -1,0 +1,25 @@
+<div class="invite-card">
+  <div class="header">
+    <h1 class="title">RECEPTION</h1>
+    <div class="details">
+      <p class="detail-row">
+        <img src="assets/calendar.png" alt="calendar" class="icon" />
+        OCTOBER 24, 2026
+      </p>
+      <p class="detail-row">
+        <img src="assets/clock.png" alt="clock" class="icon" />
+        at 07:00PM
+      </p>
+      <p class="detail-row">
+        <img src="assets/map.png" alt="map" class="icon" />
+        Mother Marriage Mahal, Tondiarpet
+      </p>
+    </div>
+  </div>
+  <div class="photo-section" (click)="goToMarriage()">
+    <img src="assets/night_image.jpeg" alt="Couple" class="couple-img" />
+    @if (showArrow) {
+      <img src="assets/arrow.png" alt="tap" class="arrow-hint" />
+    }
+  </div>
+</div>

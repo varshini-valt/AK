@@ -1,0 +1,22 @@
+<div class="wrapper">
+
+  <!-- Page behind the curtain (reception) -->
+  <app-reception class="behind" />
+
+  <!-- Curtain overlay -->
+  <div class="stage" [class.open]="opening">
+    <div class="curtain-left">
+      <img src="assets/curtain.png" alt="" />
+    </div>
+    <div class="curtain-right">
+      <img src="assets/curtain.png" alt="" />
+    </div>
+    <div class="center-text">
+      <h1 class="name">ASWIN</h1>
+      <p class="weds">WEDS</p>
+      <h1 class="name">KIRTHIGA</h1>
+      <button class="join-btn" (click)="openCurtain()">JOIN US</button>
+    </div>
+  </div>
+
+</div>
