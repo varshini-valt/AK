@@ -72,6 +72,8 @@
   overflow: hidden;
   position: relative;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
 }
 
 .couple-img {
