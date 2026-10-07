@@ -11,12 +11,16 @@ import { InviteStateService } from '../invite-state.service';
 })
 export class CurtainComponent {
   opening = false;
+  done = false;
 
   constructor(private state: InviteStateService) {}
 
   openCurtain() {
     this.opening = true;
     this.state.startAudio();
-    setTimeout(() => this.state.curtainOpened.set(true), 1000);
+    setTimeout(() => {
+      this.state.curtainOpened.set(true);
+      this.done = true;
+    }, 1000);
   }
 }
